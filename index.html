@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Año 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="typewriter">
+      <span id="typewriter-text"></span>
+    </div>
+    <div class="sled">
+      <img src="santa-sled.png" alt="Trineo de Santa" class="sled-image">
+    </div>
+  </div>
+  <div class="fireworks-container"></div>
+  <audio id="music">
+    <source src="music.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <canvas id="canvas"></canvas>
+  <footer>
+    <canvas id ="canvas"></canvas>
+    <div class="msg3"> <span>  </span><span>  </span></div>
+</footer>
+  <script>
+    document.body.addEventListener('click', () => {
+      const audio = document.getElementById('music');
+      audio.play(); 
+      setTimeout(() => {
+        audio.pause();
+      }, 20000);
+    });
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>
